@@ -1,0 +1,47 @@
+ID testu,Oblast testu,Typ testu,Popis,Kroky testu,Očekávaný výsledek,Výsledný stav
+1,Vytvoření faktury,Funkční,Ověření, zda lze vytvořit novou fakturu,"1. Otevřete stránku pro vytvoření faktury.
+2. Vyplňte všechna povinná pole.
+3. Klikněte na tlačítko 'Vytvořit fakturu'.",Faktura je úspěšně vytvořena a zobrazena v seznamu faktur,[OK / NOK]
+2,Export faktury,Funkční,Ověření, zda lze exportovat fakturu do PDF,"1. Otevřete detail faktury.
+2. Klikněte na tlačítko 'Exportovat do PDF'.
+3. Zkontrolujte, zda byl soubor PDF stažen.",Faktura je úspěšně exportována do PDF,[OK / NOK]
+3,Validace datumu,Funkční,Ověření, zda systém správně validuje datum splatnosti,"1. Zadejte datum splatnosti před datem vystavení.
+2. Klikněte na 'Uložit'.",Systém zobrazí chybu 'Datum splatnosti nemůže být před datem vystavení',[OK / NOK]
+4,Validace IČO,Funkční,Ověření, zda systém validuje IČO,"1. Zadejte neplatné IČO.
+2. Klikněte na 'Ověřit'.",Systém zobrazí chybu 'Neplatné IČO',[OK / NOK]
+5,Přidání položky faktury,Funkční,Ověření, zda lze přidat položku do faktury,"1. Klikněte na 'Přidat položku'.
+2. Vyplňte popis, množství a cenu.
+3. Klikněte na 'Uložit'.",Položka je úspěšně přidána do faktury,[OK / NOK]
+6,Změna jazyka,Funkční,Ověření, zda lze změnit jazyk faktury,"1. Vyberte jazyk 'Angličtina'.
+2. Zkontrolujte, zda se texty změnily.",Jazyk faktury je úspěšně změněn,[OK / NOK]
+7,Odstranění faktury,Funkční,Ověření, zda lze fakturu odstranit,"1. Klikněte na 'Smazat fakturu'.
+2. Potvrďte akci.",Faktura je úspěšně odstraněna ze seznamu,[OK / NOK]
+8,Bezpečnost hesla,Nefunkční,Ověření, zda systém vyhodnocuje sílu hesla,"1. Zadejte slabé heslo.
+2. Klikněte na 'Registrovat'.",Systém zobrazí chybu 'Heslo je příliš slabé',[OK / NOK]
+9,Validace e-mailu,Funkční,Ověření, zda systém validuje e-mail,"1. Zadejte neplatný e-mail.
+2. Klikněte na 'Uložit'.",Systém zobrazí chybu 'Neplatný e-mail',[OK / NOK]
+10,Generování PDF,Nefunkční,Ověření, zda lze generovat PDF při vysoké zátěži,"1. Simulujte 1000 požadavků na generování PDF.
+2. Sledujte výkon serveru.",Systém zvládne zátěž bez výpadků,[OK / NOK]
+11,Vyhledávání faktur,Funkční,Ověření, zda lze vyhledávat faktury podle čísla,"1. Zadejte číslo faktury do vyhledávacího pole.
+2. Klikněte na 'Hledat'.",Faktura je nalezena a zobrazena,[OK / NOK]
+12,Úprava faktury,Funkční,Ověření, zda lze upravit existující fakturu,"1. Otevřete detail faktury.
+2. Proveďte změny a klikněte na 'Uložit'.",Změny jsou úspěšně uloženy,[OK / NOK]
+13,Validace měny,Funkční,Ověření, zda systém validuje měnu,"1. Vyberte neplatnou měnu.
+2. Klikněte na 'Uložit'.",Systém zobrazí chybu 'Neplatná měna',[OK / NOK]
+14,Notifikace,Funkční,Ověření, zda systém zobrazuje notifikace,"1. Vytvořte fakturu.
+2. Sledujte notifikace.",Notifikace je zobrazena správně,[OK / NOK]
+15,Import dat,Nefunkční,Ověření, zda lze importovat data z CSV,"1. Nahrajte CSV soubor.
+2. Klikněte na 'Importovat'.",Data jsou úspěšně importována,[OK / NOK]
+16,Export dat,Nefunkční,Ověření, zda lze exportovat data do CSV,"1. Klikněte na 'Exportovat'.
+2. Zkontrolujte stažený soubor.",Data jsou úspěšně exportována,[OK / NOK]
+17,Responzivita,Nefunkční,Ověření, zda je aplikace responzivní,"1. Otevřete aplikaci na mobilním zařízení.
+2. Zkontrolujte zobrazení.",Aplikace je plně responzivní,[OK / NOK]
+18,Validace čísla účtu,Funkční,Ověření, zda systém validuje číslo účtu,"1. Zadejte neplatné číslo účtu.
+2. Klikněte na 'Uložit'.",Systém zobrazí chybu 'Neplatné číslo účtu',[OK / NOK]
+19,Filtrace faktur,Funkční,Ověření, zda lze filtrovat faktury podle stavu,"1. Vyberte stav 'Nezaplaceno'.
+2. Klikněte na 'Filtrovat'.",Zobrazeny jsou pouze nezaplacené faktury,[OK / NOK]
+20,Automatické ukládání,Funkční,Ověření, zda systém automaticky ukládá změny,"1. Proveďte změny ve formuláři.
+2. Zavřete formulář bez uložení.",Změny jsou automaticky uloženy,[OK / NOK]
+21,Zrušení faktury,Funkční,Ověření, zda lze zrušit fakturu,"1. Otevřete detail faktury.
+2. Klikněte na tlačítko 'Zrušit fakturu'.
+3. Potvrďte akci.",Faktura je úspěšně zrušena a označena jako 'Zrušeno',[OK / NOK]
